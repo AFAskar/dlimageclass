@@ -31,7 +31,7 @@ def main():
                 if not violation_results:
                     gr.Info("No violations detected in the image")
                     return [], []
-                
+
                 if not plate_images:
                     gr.Warning("Violations detected but no license plates found")
                     return [], []
@@ -55,13 +55,13 @@ def main():
                     plate_images_with_text.append(
                         (plate_images[i], f"Plate: {ocr_results[i]}")
                     )
-                
+
                 if not violation_images_with_boxes:
                     gr.Info("No clear violations detected in the image")
                     return [], []
 
                 return violation_images_with_boxes, plate_images_with_text
-            
+
             except Exception as e:
                 # Log the error for debugging
                 print(f"Error processing image: {str(e)}")

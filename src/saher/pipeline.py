@@ -58,6 +58,8 @@ def get_Results_orig_images(results: list[Results]) -> list[np.ndarray]:
 
 
 def detect_violations(car_images: list[Path] | list[np.ndarray]) -> list[Results]:
+    if not car_images:
+        return []
     violations = violation_detection_model.predict(
         source=car_images, classes=[7, 9, 10, 11], verbose=False
     )
@@ -74,6 +76,8 @@ def plate_detection(belt_images: list[np.ndarray]) -> list[Results]:
 
 
 def run_ocr_on_plate(plate_images: list[np.ndarray]) -> list[str]:
+    if not plate_images:
+        return []
     ocr_results = []
     for plate in plate_images:
         # Convert numpy array to PIL Image for pytesseract
