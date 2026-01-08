@@ -122,16 +122,17 @@ def run_pipeline(images_path: list[Path] | list[np.ndarray]):
     plate_results = plate_detection(violation_images)
     plate_images = get_Results_images(plate_results)
     ocr_results = run_ocr_on_plate(plate_images)
-    return violation_results, plate_images, ocr_results
+    return violation_results, plate_results, ocr_results
 
 
 def json_output(
     violation_results: list[Results],
-    plate_images: list[np.ndarray],
+    plate_results: list[Results],
     ocr_results: list[str],
 ):
     # output violation type, bboxes of violation, license plate of violator and ocr result of plate
     output = []
+    plate_images = get_Results_images(plate_results)
     for i in range(len(ocr_results)):
         plate_image = plate_images[i]
         plate_image_path = f"plate_{i}.png"
