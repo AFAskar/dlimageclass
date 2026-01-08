@@ -1,6 +1,6 @@
 [project]
 name = "saher"
-version = "0.1.10"
+version = "0.1.11"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
@@ -19,6 +19,7 @@ dependencies = [
 
 [project.scripts]
 saher = "saher.cli:app"
+saher-web = "saher.web:launch"
 
 [dependency-groups]
 dev = [
