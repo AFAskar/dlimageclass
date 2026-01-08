@@ -65,6 +65,8 @@ def detect_violations(car_images: list[Path] | list[np.ndarray]) -> list[Results
 
 
 def plate_detection(belt_images: list[np.ndarray]) -> list[Results]:
+    if not belt_images:
+        return []
     plate_results = license_plate_detection_model.predict(
         source=belt_images, verbose=False
     )
