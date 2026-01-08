@@ -110,15 +110,9 @@ def clean_violations(violation_results: list[Results]) -> list[Results]:
 def run_pipeline(images_path: list[Path] | list[np.ndarray]):
     car_results = detect_cars(images_path)
     car_images = get_Results_images(car_results)
-    if not car_images:
-        print("No cars detected in any image.")
-        return [], [], []
     violation_results = detect_violations(car_images)
     violation_results = clean_violations(violation_results)
     violation_images = get_Results_orig_images(violation_results)
-    if not violation_results:
-        print("No violations detected in any car.")
-        return [], [], []
     plate_results = plate_detection(violation_images)
     plate_images = get_Results_images(plate_results)
     ocr_results = run_ocr_on_plate(plate_images)

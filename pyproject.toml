@@ -1,6 +1,6 @@
 [project]
-name = "dlimageclass"
-version = "0.1.0"
+name = "saher"
+version = "0.1.1"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
@@ -9,11 +9,16 @@ dependencies = [
     "matplotlib>=3.10.8",
     "pandas>=2.3.3",
     "pytesseract>=0.3.13",
+    "rich>=13.9.4",
     "scikit-learn>=1.8.0",
     "torch>=2.9.1",
     "torchvision>=0.24.1",
+    "typer>=0.21.1",
     "ultralytics>=8.3.249",
 ]
+
+[project.scripts]
+saher = "saher.cli:main"
 
 [dependency-groups]
 dev = [

@@ -373,9 +373,11 @@ dependencies = [
     { name = "matplotlib" },
     { name = "pandas" },
     { name = "pytesseract" },
+    { name = "rich" },
     { name = "scikit-learn" },
     { name = "torch" },
     { name = "torchvision" },
+    { name = "typer" },
     { name = "ultralytics" },
 ]
 
@@ -390,9 +392,11 @@ requires-dist = [
     { name = "matplotlib", specifier = ">=3.10.8" },
     { name = "pandas", specifier = ">=2.3.3" },
     { name = "pytesseract", specifier = ">=0.3.13" },
+    { name = "rich", specifier = ">=13.9.4" },
     { name = "scikit-learn", specifier = ">=1.8.0" },
     { name = "torch", specifier = ">=2.9.1" },
     { name = "torchvision", specifier = ">=0.24.1" },
+    { name = "typer", specifier = ">=0.21.1" },
     { name = "ultralytics", specifier = ">=8.3.249" },
 ]
 
