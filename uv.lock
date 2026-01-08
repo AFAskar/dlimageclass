@@ -365,45 +365,6 @@ wheels = [
 ]
 
 [[package]]
-name = "dlimageclass"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "gradio" },
-    { name = "matplotlib" },
-    { name = "pandas" },
-    { name = "pytesseract" },
-    { name = "rich" },
-    { name = "scikit-learn" },
-    { name = "torch" },
-    { name = "torchvision" },
-    { name = "typer" },
-    { name = "ultralytics" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "ipykernel" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "gradio", specifier = ">=6.2.0" },
-    { name = "matplotlib", specifier = ">=3.10.8" },
-    { name = "pandas", specifier = ">=2.3.3" },
-    { name = "pytesseract", specifier = ">=0.3.13" },
-    { name = "rich", specifier = ">=13.9.4" },
-    { name = "scikit-learn", specifier = ">=1.8.0" },
-    { name = "torch", specifier = ">=2.9.1" },
-    { name = "torchvision", specifier = ">=0.24.1" },
-    { name = "typer", specifier = ">=0.21.1" },
-    { name = "ultralytics", specifier = ">=8.3.249" },
-]
-
-[package.metadata.requires-dev]
-dev = [{ name = "ipykernel", specifier = ">=7.1.0" }]
-
-[[package]]
 name = "executing"
 version = "2.2.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1690,6 +1651,45 @@ sdist = { url = "https://files.pythonhosted.org/packages/89/d1/4282284d9cf1ee873
 wheels = [
     { url = "https://files.pythonhosted.org/packages/2e/a3/0f0b7d78e2f1eb9e8e1afbff1d2bff8d60144aee17aca51c065b516743dd/safehttpx-0.1.7-py3-none-any.whl", hash = "sha256:c4f4a162db6993464d7ca3d7cc4af0ffc6515a606dfd220b9f82c6945d869cde", size = 8959, upload-time = "2025-10-24T18:30:08.733Z" },
 ]
+
+[[package]]
+name = "saher"
+version = "0.1.10"
+source = { virtual = "." }
+dependencies = [
+    { name = "gradio" },
+    { name = "matplotlib" },
+    { name = "pandas" },
+    { name = "pytesseract" },
+    { name = "rich" },
+    { name = "scikit-learn" },
+    { name = "torch" },
+    { name = "torchvision" },
+    { name = "typer" },
+    { name = "ultralytics" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "ipykernel" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "gradio", specifier = ">=6.2.0" },
+    { name = "matplotlib", specifier = ">=3.10.8" },
+    { name = "pandas", specifier = ">=2.3.3" },
+    { name = "pytesseract", specifier = ">=0.3.13" },
+    { name = "rich", specifier = ">=13.9.4" },
+    { name = "scikit-learn", specifier = ">=1.8.0" },
+    { name = "torch", specifier = ">=2.9.1" },
+    { name = "torchvision", specifier = ">=0.24.1" },
+    { name = "typer", specifier = ">=0.21.1" },
+    { name = "ultralytics", specifier = ">=8.3.249" },
+]
+
+[package.metadata.requires-dev]
+dev = [{ name = "ipykernel", specifier = ">=7.1.0" }]
 
 [[package]]
 name = "scikit-learn"

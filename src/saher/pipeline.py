@@ -113,7 +113,9 @@ def clean_violations(violation_results: list[Results]) -> list[Results]:
     return cleaned_results
 
 
-def run_pipeline(images_path: list[Path] | list[np.ndarray]):
+def run_pipeline(
+    images_path: list[Path] | list[np.ndarray],
+) -> tuple[list[Results], list[Results], list[str]]:
     car_results = detect_cars(images_path)
     car_images = get_Results_images(car_results)
     violation_results = detect_violations(car_images)
