@@ -39,26 +39,26 @@ TrafficVision is an AI-powered traffic violation detection system inspired by Sa
 Process a single image:
 
 ```sh
-uvx git+https://github.com/AFAskar/dlimageclass path/to/image.jpg
+uvx git+https://github.com/AFAskar/trafficvision path/to/image.jpg
 ```
 
 Launch the web interface:
 
 ```sh
-uvx --from git+https://github.com/AFAskar/dlimageclass trafficvision-web
+uvx --from git+https://github.com/AFAskar/trafficvision trafficvision-web
 ```
 
 ### Install from GitHub
 
 ```sh
-pip install git+https://github.com/AFAskar/dlimageclass
+pip install git+https://github.com/AFAskar/trafficvision
 ```
 
 ### Local Development
 
 ```sh
-git clone https://github.com/AFAskar/dlimageclass.git
-cd dlimageclass
+git clone https://github.com/AFAskar/trafficvision.git
+cd trafficvision
 pip install -e .
 ```
 
