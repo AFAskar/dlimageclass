@@ -7,11 +7,14 @@ import numpy as np
 import json
 from typing import Any
 
-license_plate_detection_model = YOLO("license-plate-finetune-v1s.pt")
+_MODULE_DIR = Path(__file__).parent
+_MODELS_DIR = _MODULE_DIR / "models"
 
-car_detection_model = YOLO("yolo11n.pt")
+license_plate_detection_model = YOLO(str(_MODELS_DIR / "license-plate-finetune-v1s.pt"))
 
-violation_detection_model = YOLO("seatbelt.pt")
+car_detection_model = YOLO(str(_MODELS_DIR / "yolo11n.pt"))
+
+violation_detection_model = YOLO(str(_MODELS_DIR / "seatbelt.pt"))
 VIOLATION_CLASS_NAMES = [
     "1",
     "2",

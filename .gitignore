@@ -14,3 +14,5 @@ dataset/Seat_belt_detection-2/train/*
 
 runs/
 *.pt
+# But include the package model files
+!src/saher/models/*.pt
