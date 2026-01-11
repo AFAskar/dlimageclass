@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../test/images
+test: ../test/images
+
+nc: 12
+names: ['1', '2', 'No-helmet', 'Np', 'bike', 'car', 'helmet', 'mobile', 'no-helmet', 'person-noseatbelt', 'person-seatbelt', 'seatbelt']
+
+roboflow:
+  workspace: farishijazi
+  project: seat_belt_detection-78bmx
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/farishijazi/seat_belt_detection-78bmx/dataset/2
